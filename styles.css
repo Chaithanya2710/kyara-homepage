@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FAF3E0; /* Soft beige */
+    color: #444; /* Neutral dark tone */
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #FFD194, #DFA15D); /* Warm sunset gradient */
+    color: #fff;
+    padding: 30px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sections */
+section {
+    margin: 40px;
+}
+
+/* Products */
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #FFF8E1; /* Light pastel yellow */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    color: #E08525; /* Warm orange tone */
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Contact Form */
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf7;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #E08525;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cf7318;
+}
+
+
+/* For small devices (mobile phones, less than or equal to 480px) */
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* For medium to large devices (desktops ≥ 1024px) */
+@media only screen and (min-width: 1024px) {
+    .product-container {
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .product {
+        width: 280px;
+    }
+
+    form {
+        max-width: 500px;
+    }
+}
